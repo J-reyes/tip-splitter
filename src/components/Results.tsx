@@ -16,7 +16,7 @@ export default function Results({ values }: ResultsProps) {
         <p>Tip %: {formattedTip}</p>
         <p>Number of People: {values.numberOfPeople}</p>
         <p>Tip amount per person: {formatter.format(tipAmountPerPerson)}</p>
-        <p>Total Amount: {formatter.format(values.billAmount + (values.billAmount * values.tipPercentage / 100))}</p>
+        <p>Total Amount: {formatter.format(values.billAmount + (values.billAmount * formattedTip))}</p>
     </section>
   )
 }

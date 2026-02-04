@@ -13,7 +13,6 @@ export default function TipSplitterForm({
 
   return (
     <section>
-      <h3>Tip Splitter Form Component</h3>
       <form>
         <label>
           Bill Amount: $
@@ -37,7 +36,7 @@ export default function TipSplitterForm({
         </label>
 
         <label>
-          Number of People: $
+          Number of People:
           <input
             type="number"
             name="numberOfPeople"
