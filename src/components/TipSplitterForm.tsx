@@ -9,7 +9,6 @@ export default function TipSplitterForm({
   handleChange,
   values,
 }: TipSplitterFormProps) {
-  console.log(values);
 
   return (
     <section>
@@ -29,9 +28,7 @@ export default function TipSplitterForm({
           <input
             name="tipPercentage"
             value={values.tipPercentage}
-            onChange={(e) =>
-              handleChange("tipPercentage", e.target.value)
-            }
+            onChange={(e) => handleChange("tipPercentage", e.target.value)}
           />
         </label>
 
@@ -41,9 +38,7 @@ export default function TipSplitterForm({
             type="number"
             name="numberOfPeople"
             value={values.numberOfPeople}
-            onChange={(e) =>
-              handleChange("numberOfPeople", e.target.value)
-            }
+            onChange={(e) => handleChange("numberOfPeople", e.target.value)}
           />
         </label>
       </form>
